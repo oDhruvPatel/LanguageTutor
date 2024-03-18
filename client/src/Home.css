@@ -1,0 +1,262 @@
+
+
+/* rgb(255, 187, 0) rgb(33, 44, 59) rgb(0 167 120) rgb(228 105 98) rgb(0 159 187)*/
+
+
+
+main
+{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(22,30,34);
+    display: flex;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+       font-weight: 500;
+       font-size: larger;
+       letter-spacing: 1px;
+       animation: vis 1s linear;
+}
+
+@keyframes vis {
+    0% { opacity: 0; }
+    100% { opacity: 100; }
+  }
+
+.welcome
+{
+    color: rgb(161,220,76);
+}
+
+.nav
+{
+    height: 100vh;
+    width: 15%;
+    overflow: hidden;
+    border-right: 1px solid rgba(255,255,255,0.05);
+
+    
+}
+
+
+.nav .name
+{
+    font-size: 28px;
+    font-weight: 600;
+    /* color: rgb(252, 181, 0); */
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.nav .links
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav .links ul
+{
+    
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:last baseline;
+    margin-bottom: 150px;
+    
+}
+
+.nav .links ul li
+{
+    padding: 15px 100px 15px 100px;
+    color: white;
+    transition: all 0.2s;
+    font-weight:800;
+    letter-spacing: 1px;
+    display: flex;
+        
+    
+}
+
+.nav .links ul li img
+{
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 0px 0px;
+}
+
+
+.nav .links ul li:hover
+{
+    color: #43c000 ;
+    cursor: pointer;
+}
+
+.nav .logout
+{
+    width: 100%;
+    height: 15%;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     
+    border-top: 1px solid rgba(255,255,255,0.05); */
+    
+}
+
+.nav .logout:hover
+{
+    color: #43c000;
+    
+}
+
+.section
+{
+    height: 100vh;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.round
+{
+    width: 30vw;
+}
+
+.container
+{
+    /* background: red; */
+    height: 80vh;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.previous
+{
+    display: flex;
+    /* background: #000; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 6.5%;
+    color: white;
+    
+}
+
+
+.previous .prev{
+
+margin-top: 7px;
+
+}
+
+
+.rot
+{
+    transform:rotate(180deg);
+}
+
+.button {
+  height: 50px;
+  width: 70%;
+  font-size: 30px;
+  color: white;
+    background-color: #58cc02;
+    border-radius: 50%;
+    box-shadow: 0 5px 0 #58a700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    }
+
+    .content{
+        z-index: 1;
+    }
+
+    .content img
+    {
+        /* position: absolute;
+        bottom: 80px;
+        right: 510px; */
+        height: 250px;
+        width: 250px;
+        z-index: -1;
+        
+    }
+
+    
+    .button:active {
+    
+    box-shadow: none;
+    
+    transform: translateY(5px);
+    
+    }
+
+    .btn{
+         background: #ff4b4b;
+         border-radius: 10px;
+         width: 150px;
+        font-size: 20px;
+        box-shadow: 0 5px 0 #b93636;
+
+    }
+  /* Add any additional styling or adjustments as needed */
+  
+
+  .lesn-frm input ,   .lesn-frm select
+  {
+    color:  white;
+    border-radius: 12px;
+    border: 3px solid rgba(255,255,255,0.05);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .lesn-frm
+  {
+    border: none;
+  }
+ 
+.btn-lesson
+{
+    background-color: #ff4b4b;
+}
+
+#lsn-btn
+{ 
+    color: white;
+    background: #ff4b4b;
+    box-shadow: 0 5px 0 #b93636;
+    /* background-color: #58cc02;
+    box-shadow: 0 5px 0 #58a700; */
+    border: none;
+}

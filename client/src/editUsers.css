@@ -1,0 +1,96 @@
+/* EditUsers.css */
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.user-table th,
+.user-table td {
+
+  padding: 12px;
+  text-align: left;
+  width: 20%; /* Equal width for all columns */
+  text-align: center;
+}
+
+.user-table th {
+  text-align: center;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  background-color: #43c000; /* Header background color */
+  color: #fff; /* Header text color */
+  z-index: 2;
+}
+
+
+.container-user {
+  height: 70vh;
+  width: 70vw;
+  color: #333; /* Text color */
+  overflow: auto;
+  position: relative; /* Add position relative */
+  color: white;
+  scrollbar-width: none;
+  background:  rgb(24, 37, 42);
+}
+
+.user-table tr:nth-child(even) {
+  background-color: rgb(31, 46, 52); /* Even row background color */
+}
+
+
+
+.container-user h2 {
+  color: #2b70c9; /* Header text color */
+  margin-bottom: 20px; /* Add spacing below header */
+}
+
+.user-table button {
+   /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 6px 10px; /* Smaller padding for buttons */
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+
+
+.user-table .delete-button {
+  background-color: #b93636; /* Delete button background color */
+}
+
+.user-table .delete-button:hover {
+  background-color: #a52727; /* Delete button hover background color */
+}
+
+
+.edit , .delete
+{
+  width: 100px;
+  
+}
+
+.edit 
+{
+  box-shadow: 0 5px 0 #2b70c9;
+  background: #1cb0f6;
+}
+
+.delete
+{
+  box-shadow: 0 5px 0 #b93636;
+  background: #ff4b4b;
+}
+
+.edit:active , .delete:active
+{
+  box-shadow: none;
+    
+  transform: translateY(5px);
+  
+}
